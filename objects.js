@@ -9,17 +9,20 @@ const obj = {
 
 obj["food item"] = 10;
 
-obj.add();
+// obj.add();
 
 
-function Person() {
-    this.name = "Anshul"
-    this.age = 30;
-    return {
-        name: this.name,
-        age: this.age
-    };
+class Person {
+    constructor() {
+        this.name = "Anshul";
+        this.age = 30;
+    }
+    add() {
+        return ("hello");
+    }
 }
 
 const person = new Person();
-console.log(person)
+console.log(person);
+console.log(person.add());
+// console.log(person.age);
