@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const obj = {
+        "food item": 5,
+        vegitables: 10,
+        add() {
+          console.log(`The sum is ${this["food item"] + this.vegitables}`);
+        },
+      };
+
+      obj["food item"] = 10;
+
+      // obj.add();
+
+      class Person {
+        constructor() {
+          this.name = "Anshul";
+          this.age = 30;
+          //   return { name: "Anshul" };
+        }
+        add() {
+          return "hello";
+        }
+      }
+
+      const person = new Person();
+      console.log(person);
+      console.log(person.add());
+      // console.log(person.age);
+
+      const arr = ["Thor", "Iron Man"];
+      console.log(arr);
+    </script>
+  </body>
+</html>
